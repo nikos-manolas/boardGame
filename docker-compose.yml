@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  front-end:
+    image: node:12
+    volumes:
+      - ./:/app
+      - /app/node_modules/
+    working_dir: /app
+    command: bash -c 'npm ci && npm run dev:front-end'
+    ports:
+      - "3000:8080"
+
+  back-end:
+    image: node:12
+    volumes:
+      - ./:/app
+      - /app/node_modules/
+    working_dir: /app
+    command: bash -c 'npm ci && npm run dev:back-end'
+    ports:
+      - "3001:3001"

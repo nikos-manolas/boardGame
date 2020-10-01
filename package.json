@@ -1,0 +1,46 @@
+{
+  "name": "ox",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src/",
+  "keywords": [
+    "feathers"
+  ],
+  "license": "MIT",
+  "repository": {},
+  "author": {},
+  "contributors": [],
+  "bugs": {},
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "scripts": {
+    "test": "npm run jshint && npm run mocha",
+    "dev:back-end": "nodemon -e js server/index.js",
+    "dev:front-end": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.1.0",
+    "body-parser": "^1.19.0",
+    "css-loader": "^3.6.0",
+    "express": "^4.17.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.8.2",
+    "redux-promise-middleware": "^4.2.0",
+    "sass-loader": "^9.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

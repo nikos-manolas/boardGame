@@ -1,0 +1,13 @@
+.board {
+  .board--row {
+    clear: both;
+    .board--cell {
+      float: left;
+      width: 100px;
+      height: 100px;
+      background-color: lightgray;
+      margin: 5px;
+      cursor: pointer;
+    }
+  }
+}
